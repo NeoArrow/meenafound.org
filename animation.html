@@ -66,8 +66,8 @@ const frontTexture = loader.load("res/img/11.jpg"); //  front cover
 const backTexture = loader.load("res/img/11.jpg");   //  back cover
 
 /* ===== BOOK ===== */
-const bookWidth = 12;
-const bookHeight = 18;
+const bookWidth = 15;
+const bookHeight = 25;
 const bookDepth = 2;
 
 const bookMaterials = [
@@ -91,7 +91,7 @@ donutmat.wrapS = THREE.RepeatWrapping;
 donutmat.wrapT = THREE.RepeatWrapping;
 donutmat.repeat.set(1, 1); 
 /* ===== DONUT HOLDER ===== */
-const holderGeometry = new THREE.TorusGeometry(5, 0.5, 56, 100);
+const holderGeometry = new THREE.TorusGeometry(0, 0, 0);
 
 const holderMaterial = new THREE.MeshStandardMaterial({
     map: donutmat,
